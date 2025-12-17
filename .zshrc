@@ -112,6 +112,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias k9d="export KUBECONFIG=~/BFT/kubeconfigs/DEV  && k9s"
+alias k9t="export KUBECONFIG=~/BFT/kubeconfigs/TEST  && k9s"
+alias k9u="export KUBECONFIG=~/BFT/kubeconfigs/UAT  && k9s"
+alias k9p="export KUBECONFIG=~/BFT/kubeconfigs/PROD  && k9s"
+alias k9int="export KUBECONFIG=~/BFT/kubeconfigs/INTERNAL_CUBE  && k9s"
+
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
